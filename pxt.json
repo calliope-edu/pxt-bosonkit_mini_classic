@@ -1,0 +1,23 @@
+{
+    "name": "pxt-ky-040",
+    "version": "2.0.4",
+    "description": "Extension for the Boson Kit for the Calliope mini 3",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "main.blocks",
+        "main.ts",
+        "bosonkit_mini3.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "tsprj"
+}
