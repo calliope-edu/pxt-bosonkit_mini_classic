@@ -18,7 +18,7 @@ enum BosonSpeakerPins {
     M0,
     M1
 }
-//% weight=100 color=#b5cf0a icon="\uf085" block="Boson Kit V3"
+//% weight=10 color=#b5cf0a icon="\uf085" block="Boson Kit V3"
 namespace BosonKitV3 {
 
     //% block="set digital value for fan on %pin to %level"
@@ -58,8 +58,8 @@ namespace BosonKitV3 {
     }
 
     //% blockId=setSpeakerPin weight=100
-    //% block="set audio pin to %pin at volume %volume"
-    //% block.loc.de="setze Audio Pin auf %pin mit Lautstärke %volume"
+    //% block="set speaker to %pin at volume %volume"
+    //% block.loc.de="setze Lautsprecher auf %pin mit Lautstärke %volume"
     //% volume.min=0 volume.max=100 volume.defl=50
     export function setSpeakerPin (pin: BosonSpeakerPins, volume: number){
         switch (pin) {
