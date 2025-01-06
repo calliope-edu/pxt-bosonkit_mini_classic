@@ -33,7 +33,7 @@ namespace BosonKitV3 {
     //% block.loc.de="setze analogen Wert für Ventilator an %pin auf %level"
     //% level.min=0 level.max=1023 level.defl=511
     export function writeAnalogPin(pin: BosonPins, level: number): void {
-        pins.digitalWritePin(<number>pin, level);
+        pins.analogWritePin(<number>pin, level);
     }
 
     //% blockId=readAnalogSensor weight=100
