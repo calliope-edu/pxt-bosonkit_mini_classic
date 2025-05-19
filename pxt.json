@@ -3,8 +3,7 @@
     "version": "1.0",
     "description": "Extension for the Boson Kit for the Calliope mini 3",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
