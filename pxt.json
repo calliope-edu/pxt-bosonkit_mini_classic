@@ -1,6 +1,6 @@
 {
     "name": "Boson Kit V3",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Extension for the Boson Kit for the Calliope mini 3",
     "dependencies": {
         "core": "*"
