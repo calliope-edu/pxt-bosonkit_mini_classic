@@ -1,8 +1,8 @@
 enum BosonAnalogPins {
-    P0 = AnalogPin.P0,
     P1 = AnalogPin.P1,
     P2 = AnalogPin.P2,
-    C16 = AnalogPin.C16
+    P26 = AnalogPin.C16,
+    P27 = AnalogPin.C17
 }
 
 
@@ -11,14 +11,10 @@ enum BosonPins {
     P1 = DigitalPin.P1,
     P2 = DigitalPin.P2,
     P3 = DigitalPin.P3,
-    C16 = DigitalPin.C16,
-    C17 = DigitalPin.C17
+    P26 = DigitalPin.C16,
+    P27 = DigitalPin.C17
 }
-enum BosonSpeakerPins {
-    M0,
-    M1
-}
-//% weight=10 color=#b5cf0a icon="\uf085" block="Boson Kit V3"
+//% weight=10 color=#063470 icon="\uf085" block="Boson Kit Classic"
 namespace BosonKitV3 {
 
     //% block="set digital value for fan on %pin to %level"
@@ -57,29 +53,7 @@ namespace BosonKitV3 {
         return pins.servoWritePin(<number>pin,level)
     }
 
-    //% blockId=setSpeakerPin weight=100
-    //% block="set speaker to %pin at volume %volume"
-    //% block.loc.de="setze Lautsprecher auf %pin mit Lautstärke %volume"
-    //% volume.min=0 volume.max=100 volume.defl=50
-    export function setSpeakerPin (pin: BosonSpeakerPins, volume: number){
-        switch (pin) {
-            case BosonSpeakerPins.M0:
-                pins.digitalWritePin(DigitalPin.M_MODE, 0)
-                pins.digitalWritePin(DigitalPin.M0_SPEED, 0)
-                pins.setAudioPin(AnalogPin.M0_DIR)
-                music.setSilenceLevel(0)
-                music.setVolume(volume)
-                break;
-            case BosonSpeakerPins.M1:
-                pins.digitalWritePin(DigitalPin.M_MODE, 0)
-                pins.digitalWritePin(DigitalPin.M1_SPEED, 0)
-                pins.setAudioPin(AnalogPin.M1_DIR)
-                music.setSilenceLevel(0)
-                music.setVolume(volume)
-                break;
-        }
-        
-    }
+
 
     //% blockId="onEventOnPin"
     //% block="on event on pin %pin"
