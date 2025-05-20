@@ -1,7 +1,7 @@
 {
-    "name": "Boson Kit V3",
+    "name": "Boson Kit Classic",
     "version": "1.0.1",
-    "description": "Extension for the Boson Kit for the Calliope mini 3",
+    "description": "Extension for the Boson Kit for the Calliope mini V1 & V2",
     "dependencies": {
         "core": "*"
     },
@@ -9,7 +9,7 @@
         "README.md",
         "main.blocks",
         "main.ts",
-        "bosonkit_mini3.ts"
+        "bosonkit_mini_classic.ts"
     ],
     "testFiles": [
         "test.ts"
