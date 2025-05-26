@@ -55,11 +55,4 @@ namespace BosonKitClassic {
         return pins.servoWritePin(<number>pin, level)
     }
 
-    //% blockId="onEventOnPin"
-    //% block="on event on pin %pin"
-    //% block.loc.de="wenn Ereignis an Pin %pin "
-    export function onEventOnPin(pin: BosonPins, handler: () => void): void {
-        pins.setPull(<number>pin, PinPullMode.PullUp);
-        input.onPinTouchEvent(<number>pin, input.buttonEventValue(ButtonEvent.Up), handler);
-    }
 }
