@@ -1,6 +1,6 @@
 {
     "name": "Boson Kit Classic",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Extension for the Boson Kit for the Calliope mini V1 & V2",
     "dependencies": {
         "core": "*"
